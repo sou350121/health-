@@ -1,0 +1,11 @@
+# SQLite database files (keep schema & scripts in git, ignore local data)
+*.db
+*.db-shm
+*.db-wal
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+
