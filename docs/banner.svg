@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Health DB banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="45%" stop-color="#0f1b33"/>
+      <stop offset="100%" stop-color="#0a2a2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1280" height="320" rx="28" fill="url(#bg)"/>
+
+  <!-- decorative grid -->
+  <g opacity="0.18">
+    <path d="M0 64H1280M0 128H1280M0 192H1280M0 256H1280" stroke="#7dd3fc" stroke-width="1"/>
+    <path d="M160 0V320M320 0V320M480 0V320M640 0V320M800 0V320M960 0V320M1120 0V320" stroke="#a7f3d0" stroke-width="1"/>
+  </g>
+
+  <!-- accent bar -->
+  <rect x="72" y="64" width="10" height="192" rx="5" fill="url(#accent)"/>
+
+  <!-- logo mark (simple heart + db) -->
+  <g transform="translate(1040 82)" filter="url(#shadow)">
+    <rect x="0" y="0" width="168" height="168" rx="28" fill="#0b1730" stroke="rgba(255,255,255,0.14)"/>
+    <!-- heart -->
+    <path d="M84 128c-28-18-46-36-46-57 0-16 12-28 28-28 9 0 17 4 22 11 5-7 13-11 22-11 16 0 28 12 28 28 0 21-18 39-54 57z"
+          fill="#22c55e" opacity="0.92"/>
+    <!-- db cylinder -->
+    <g transform="translate(34 22)" opacity="0.95">
+      <ellipse cx="50" cy="22" rx="42" ry="14" fill="#06b6d4"/>
+      <path d="M8 22v44c0 8 19 14 42 14s42-6 42-14V22" fill="#06b6d4"/>
+      <ellipse cx="50" cy="66" rx="42" ry="14" fill="#0ea5e9" opacity="0.85"/>
+      <ellipse cx="50" cy="22" rx="42" ry="14" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+      <ellipse cx="50" cy="66" rx="42" ry="14" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- text -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji'" fill="#ffffff">
+    <text x="104" y="120" font-size="56" font-weight="800" letter-spacing="-0.5">Health DB</text>
+    <text x="104" y="168" font-size="24" opacity="0.85">个人健康数据 · SQLite · 可扩展时间序列 Schema</text>
+    <text x="104" y="212" font-size="18" opacity="0.70">Measurements · Sleep · Activity · Nutrition · Meds · Symptoms</text>
+  </g>
+
+  <!-- bottom accent line -->
+  <rect x="104" y="244" width="560" height="6" rx="3" fill="url(#accent)" opacity="0.9"/>
+</svg>
+
+
